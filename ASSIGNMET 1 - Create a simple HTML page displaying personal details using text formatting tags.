@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Personal Information</title>
+</head>
+<body bgcolor="pink">
+<center>
+<h1 style="color:blue;"> Student Bio-Data </h1>
+<h3> Department of Computer Engineering</h3>
+</center>
+<hr size="3" color="black">
+<! Personal Information Section>
+<h2 style="color: red;">1. Personal Information</h2>
+<p>
+<b> Full Name : </b> Arjun manish Ghule<br>
+<b> Date of Birth : </b> 05<sup>th</sup> October 2006<br>
+<b> Address : </b> Yevalewadi<br>
+</p>
+<hr size="3" color="black">
+<!Educational Details Section>
+<h2 style="color:red;"> Educational Details</h2>
+<p>
+<b>Degree</b> Bachelor of Engineering<br>
+<b>College</b> SAE,Kondhwa<br>
+<b>Current Year</b> Second Year<br>
+<b> Percentage</b> <mark>84.47%</mark>
+</p>
+<hr size="3" color="black">
+<! Hobbies and Interest>
+<h2 style="color:red;"> Hobbies anf Interests</h2>
+<p>
+I Enjoy
+<br> &bull; Reading <small> novel</small>
+<br> &bull; watching Movie
+<br> &bull; Listening Songs
+<br> &bull; Coding in <b> JAVA</b> and <b> PYTHON</b>
+<hr size="3" color="black">
+<hr size="3" color="black">
+<center><b>*********End of Profile***********</b></center>
+</body>
+</html>
