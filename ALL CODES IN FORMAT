@@ -1,0 +1,843 @@
+Assignment 1
+
+Create a simple HTML page displaying personal details using text formatting
+tags.
+CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 1 - Personal Details</title>
+</head>
+<body bgcolor="#f0f8ff">
+<!-- Header Section -->
+<center>
+<h1 style="color: navy;">STUDENT BIO-DATA</h1>
+<h3>Department of Computer Engineering</h3>
+</center>
+<hr size="3" color="black">
+<!-- Personal Info Section -->
+<h2>1. Personal Information</h2>
+<p>
+<b>Full Name:</b> Rohit S. Sharma<br>
+<b>Date of Birth:</b> 15<sup>th</sup> August 2004<br>
+<b>Email ID:</b> <u>rohit.sharma@example.com</u><br>
+<b>Address:</b> <i>Flat No. 101, Sunshine Society, Pune - 411041.</i>
+</p>
+<!-- Education Section -->
+<h2>2. Educational Qualification</h2>
+<p>
+<strong>Degree:</strong> Bachelor of Engineering (Computer)<br>
+<strong>College:</strong> Savitribai Phule Pune University<br>
+<strong>Current Year:</strong> Second Year (SE)<br>
+<strong>Percentage:</strong> <mark>85.50%</mark>
+</p>
+<!-- Hobbies Section -->
+<h2>3. Hobbies & Interests</h2>
+<p>
+I enjoy:
+<br> &bull; Reading <small>(Science Fiction)</small>
+<br> &bull; Coding in <b>Java</b> and <b>Python</b>
+<br> &bull; Traveling
+</p>
+<hr>
+<center><b>*** End of Profile ***</b></center>
+</body>
+</html>
+
+Assignment 2
+
+Design a web page that includes an image, hyperlink, and a nested table.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile & Timetable</title>
+</head>
+<body>
+<!-- Main Layout Table -->
+<table border="1" width="100%" cellpadding="10" cellspacing="0">
+<!-- Header -->
+<tr bgcolor="#2c3e50">
+<th colspan="2" style="color: white; padding: 15px;">
+<h1>STUDENT DASHBOARD</h1>
+</th>
+</tr>
+<tr>
+<!-- Left Column: Profile -->
+<td width="30%" align="center" valign="top" bgcolor="#ecf0f1">
+<h3>Student Profile</h3>
+<!-- Ensure 'student.png' exists in the folder -->
+<img src="student.png" alt="Student Photo" width="150" height="150"
+border="2">
+<br><br>
+<p><b>Name:</b> Aryan Patil</p>
+<p><b>Roll No:</b> 24055</p>
+<br>
+<!-- Hyperlink -->
+<a href="http://www.unipune.ac.in/" target="_blank">
+<button style="cursor: pointer; padding: 10px;">Visit SPPU Website</button>
+</a>
+</td>
+<!-- Right Column: Nested Table -->
+<td valign="top">
+<h3 align="center">Weekly Academic Schedule</h3>
+<!-- START NESTED TABLE -->
+<table border="1" width="90%" align="center" cellspacing="0" cellpadding="8">
+<tr bgcolor="#3498db" style="color: white;">
+<th>Time</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+</tr>
+
+<tr>
+<td align="center">10:00 - 11:00</td>
+<td>Web Development</td>
+<td>Data Structures</td>
+<td>Logic Design</td>
+</tr>
+<tr>
+<td align="center">11:00 - 12:00</td>
+<td>Database Mgmt</td>
+<td>Web Development</td>
+<td>Mathematics</td>
+</tr>
+<tr bgcolor="#bdc3c7">
+<td align="center">12:00 - 01:00</td>
+<td colspan="3" align="center"><b>LUNCH BREAK</b></td>
+</tr>
+<tr>
+<td align="center">01:00 - 03:00</td>
+<td><b>Web Dev Lab</b></td>
+<td>DS Lab</td>
+<td>DBMS Lab</td>
+</tr>
+</table>
+<!-- END NESTED TABLE -->
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+Assignment 3
+
+Create a form with fields: name, email, gender, date of birth, and submit button.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body style="font-family: Arial, sans-serif;">
+<h2 align="center">Student Registration Form</h2>
+<table align="center" border="1" cellpadding="20" width="50%" bgcolor="#fdfdfd">
+<tr>
+<td>
+<form action="#" method="POST">
+<!-- Name -->
+<label for="fname"><b>Full Name:</b></label><br>
+<input type="text" id="fname" name="fullname" placeholder="Enter full name"
+required style="width: 100%; padding: 8px;">
+<br><br>
+<!-- Email -->
+<label for="email"><b>Email Address:</b></label><br>
+<input type="email" id="email" name="email"
+placeholder="example@college.edu" required style="width: 100%; padding: 8px;">
+<br><br>
+<!-- Gender -->
+<label><b>Gender:</b></label><br>
+<input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label>
+&nbsp;&nbsp;
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+<br><br>
+<!-- Date of Birth -->
+<label for="dob"><b>Date of Birth:</b></label><br>
+<input type="date" id="dob" name="dob" style="padding: 5px;">
+<br><br>
+<!-- Submit Button -->
+<center>
+<input type="submit" value="Register" style="background-color: green;
+color: white; padding: 10px 20px; border: none; cursor: pointer;">
+&nbsp;&nbsp;
+
+<input type="reset" value="Clear" style="background-color: red; color:
+white; padding: 10px 20px; border: none; cursor: pointer;">
+</center>
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+Assignment 4
+
+Apply internal, external, and inline CSS to style a web page with headings and
+tables.
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Types Demo</title>
+<!-- 2. INTERNAL CSS -->
+<style>
+body {
+background-color: #f0f8ff; /* AliceBlue */
+font-family: Verdana, sans-serif;
+}
+/* Class Selector for Table */
+.myTable {
+border-collapse: collapse;
+width: 80%;
+margin: auto;
+background-color: white;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.myTable th {
+background-color: #4CAF50;
+color: white;
+padding: 12px;
+text-align: left;
+}
+.myTable td {
+border: 1px solid #ddd;
+padding: 8px;
+}
+/* Hover Effect */
+.myTable tr:hover { background-color: #f5f5f5; }
+</style>
+</head>
+<body>
+<!-- 1. INLINE CSS -->
+<h1 style="color: navy; text-align: center; border-bottom: 2px solid navy;">
+CSS Implementation Demo
+</h1>
+
+<p style="text-align: center; color: gray; font-style: italic;">
+This text is styled using Inline CSS.
+</p>
+<br>
+<div align="center">
+<h3>Employee Data Table (Styled via Internal CSS)</h3>
+<table class="myTable">
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Department</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>101</td>
+<td>Alice Johnson</td>
+<td>HR</td>
+<td style="color: green; font-weight: bold;">Active</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Bob Smith</td>
+<td>IT</td>
+<td style="color: green; font-weight: bold;">Active</td>
+</tr>
+<tr>
+<td>103</td>
+<td>Charlie Brown</td>
+<td>Finance</td>
+<td style="color: red; font-weight: bold;">Inactive</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+
+Assignment 5
+
+Develop a responsive web page using Bootstrap Grid and Components.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap Responsive Demo</title>
+<!-- Bootstrap CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+rel="stylesheet">
+</head>
+<body>
+<!-- Navbar Component -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">My Portfolio</a>
+</div>
+</nav>
+<div class="container mt-5">
+<h2 class="text-center mb-4">My Skills (Responsive Grid)</h2>
+<!-- Grid Row -->
+<div class="row">
+<!-- Column 1 -->
+<div class="col-md-4 col-sm-12 mb-3">
+<div class="card shadow">
+<div class="card-header bg-primary text-white">Frontend</div>
+<div class="card-body">
+<h5 class="card-title">HTML & CSS</h5>
+<p class="card-text">Building structure and styling web pages
+effectively.</p>
+<a href="#" class="btn btn-outline-primary">Details</a>
+</div>
+</div>
+</div>
+<!-- Column 2 -->
+<div class="col-md-4 col-sm-12 mb-3">
+<div class="card shadow">
+<div class="card-header bg-success text-white">Frameworks</div>
+<div class="card-body">
+<h5 class="card-title">Bootstrap</h5>
+
+<p class="card-text">Creating mobile-first responsive layouts quickly.</p>
+<a href="#" class="btn btn-outline-success">Details</a>
+</div>
+</div>
+</div>
+<!-- Column 3 -->
+<div class="col-md-4 col-sm-12 mb-3">
+<div class="card shadow">
+<div class="card-header bg-danger text-white">Backend</div>
+<div class="card-body">
+<h5 class="card-title">PHP</h5>
+<p class="card-text">Server-side scripting for dynamic web
+applications.</p>
+<a href="#" class="btn btn-outline-danger">Details</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bootstrap JS CDN -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+Assignment 6
+
+Write a JavaScript program to validate form inputs (e.g., email, empty fields).
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Form Validation</title>
+<style>
+body { font-family: Arial, sans-serif; background: #eee; }
+.login-box { width: 300px; margin: 50px auto; padding: 20px; background: white;
+border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+input { width: 100%; padding: 8px; margin: 10px 0; box-sizing: border-box; }
+button { width: 100%; padding: 10px; background: #4CAF50; color: white; border:
+none; cursor: pointer; font-size: 16px; }
+button:hover { background: #45a049; }
+</style>
+<script>
+function validateForm() {
+// 1. Retrieve Values
+var email = document.getElementById("u_email").value;
+var pass = document.getElementById("u_pass").value;
+// 2. Check Empty Fields
+if (email == "" || pass == "") {
+alert("Error: Fields cannot be empty!");
+return false; // Stop form submission
+}
+// 3. Check Email Format (Basic Logic)
+// Rule: Must contain '@', must contain '.', and '@' cannot be at the start
+var atPos = email.indexOf("@");
+var dotPos = email.lastIndexOf(".");
+if (atPos < 1 || dotPos < atPos + 2 || dotPos + 2 >= email.length) {
+alert("Error: Please enter a valid email address!");
+return false;
+}
+// 4. Check Password Length
+if (pass.length < 6) {
+alert("Error: Password must be at least 6 characters long.");
+return false;
+}
+// 5. If all checks pass
+alert("Validation Successful! Submitting form...");
+return true; // Allow form submission
+
+}
+</script>
+</head>
+<body>
+<div class="login-box">
+<h2 style="text-align:center">Login</h2>
+<!-- Form -->
+<form name="myForm" action="dashboard.html" onsubmit="return validateForm()"
+method="post">
+<label>Email ID:</label>
+<input type="text" id="u_email" name="email" placeholder="user@example.com">
+<label>Password:</label>
+<input type="password" id="u_pass" name="password" placeholder="******">
+<button type="submit">Login</button>
+</form>
+</div>
+</body>
+</html>
+
+Assignment 7
+
+Create a web page that uses JavaScript to display dynamic content using DOM.
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Manipulation</title>
+<style>
+body { text-align: center; font-family: sans-serif; margin-top: 50px; }
+#targetBox {
+width: 300px;
+height: 150px;
+background-color: #e0e0e0;
+border: 2px solid #333;
+padding: 40px 20px;
+box-sizing: border-box; /* Includes padding in width */
+font-size: 20px;
+margin: 20px auto;
+transition: all 0.5s ease; /* Smooth transition */
+}
+.btn {
+padding: 10px 20px;
+margin: 5px;
+cursor: pointer;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+}
+.btn:hover { background-color: #0056b3; }
+</style>
+</head>
+<body>
+<h2>JavaScript DOM Demo</h2>
+<!-- Target Element -->
+<div id="targetBox">Original Text Content</div>
+<br>
+<!-- Interactive Controls -->
+<button class="btn" onclick="changeText()">Change Text</button>
+<button class="btn" onclick="changeStyle()">Change Style</button>
+<button class="btn" onclick="toggleBox()">Show / Hide</button>
+
+<script>
+// Function 1: Change Content
+function changeText() {
+var box = document.getElementById("targetBox");
+box.innerHTML = "<b>Hello World!</b><br>DOM Manipulation is cool.";
+}
+// Function 2: Change CSS Styles
+function changeStyle() {
+var box = document.getElementById("targetBox");
+box.style.backgroundColor = "#ffeb3b"; // Yellow
+box.style.color = "#d32f2f"; // Red Text
+box.style.border = "5px dashed #d32f2f";
+box.style.borderRadius = "25px";
+box.style.boxShadow = "0px 10px 20px rgba(0,0,0,0.3)";
+}
+// Function 3: Toggle Visibility logic
+function toggleBox() {
+var box = document.getElementById("targetBox");
+// Check computed style or check if inline style is set
+if (box.style.display === "none") {
+box.style.display = "block";
+} else {
+box.style.display = "none";
+}
+}
+</script>
+</body>
+</html>
+
+Assignment 8
+
+Write a JavaScript program for a simple calculator using functions and switch-case.
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Calculator</title>
+<style>
+.calculator {
+width: 320px;
+margin: 50px auto;
+padding: 20px;
+border: 1px solid #ccc;
+background-color: #f8f9fa;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+text-align: center;
+}
+input { width: 90%; padding: 10px; margin: 10px 0; font-size: 16px; }
+.btn-group button { width: 22%; padding: 15px; font-size: 18px; cursor: pointer;
+margin: 2px; }
+#result { font-size: 24px; color: navy; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="calculator">
+<h2>JS Calculator</h2>
+<input type="number" id="num1" placeholder="Enter Number 1">
+<input type="number" id="num2" placeholder="Enter Number 2">
+<div class="btn-group">
+<button onclick="calculate('+')">+</button>
+<button onclick="calculate('-')">-</button>
+<button onclick="calculate('*')">&times;</button>
+<button onclick="calculate('/')">&divide;</button>
+</div>
+<hr>
+<p>Result: <span id="result">0</span></p>
+</div>
+<script>
+function calculate(operator) {
+// 1. Get Values and Convert to Float
+var n1 = parseFloat(document.getElementById("num1").value);
+var n2 = parseFloat(document.getElementById("num2").value);
+var output = 0;
+
+// 2. Validation
+if (isNaN(n1) || isNaN(n2)) {
+alert("Please enter valid numbers!");
+return;
+}
+// 3. Logic
+switch(operator) {
+case '+':
+output = n1 + n2;
+break;
+case '-':
+output = n1 - n2;
+break;
+case '*':
+output = n1 * n2;
+break;
+case '/':
+if (n2 === 0) {
+alert("Cannot Divide by Zero");
+return;
+}
+output = n1 / n2;
+break;
+default:
+output = "Invalid";
+}
+// 4. Display
+document.getElementById("result").innerHTML = output;
+}
+</script>
+</body>
+</html>
+
+Assignment 9
+
+Design a PHP script to display "Welcome" message and current date & time.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHP Introduction</title>
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f0f2f5;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.server-card {
+background-color: white;
+padding: 40px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+text-align: center;
+border-top: 5px solid #7b1fa2; /* Purple Accent */
+}
+.time-box {
+background-color: #f3e5f5;
+padding: 15px;
+margin-top: 20px;
+border-radius: 5px;
+font-weight: bold;
+color: #4a148c;
+border: 1px dashed #7b1fa2;
+}
+</style>
+</head>
+<body>
+<div class="server-card">
+<h1 style="color: #4a148c;">Server-Side Scripting</h1>
+<hr>
+<?php
+// --- PHP SCRIPT STARTS HERE ---
+// 1. Configuration: Set Timezone to India
+
+date_default_timezone_set('Asia/Kolkata');
+// 2. Variable Declaration
+$greeting = "Welcome to Web Development Lab";
+$student_role = "Second Year Engineering Student";
+// 3. String Output using Echo
+// Note: We can embed HTML tags inside the PHP string
+echo "<h2>$greeting</h2>";
+echo "<p>You are logged in as: <b>$student_role</b></p>";
+// 4. Date Logic
+$current_date = date("l, d F Y"); // e.g., Monday, 02 December 2024
+$current_time = date("h:i:s A"); // e.g., 03:30:45 PM
+echo "<div class='time-box'>";
+echo "Server Date: " . $current_date . "<br>";
+echo "Server Time: " . $current_time;
+echo "</div>";
+// --- PHP SCRIPT ENDS HERE ---
+?>
+<p><small><i>This page was generated dynamically by
+Apache/PHP.</i></small></p>
+</div>
+</body>
+</html>
+
+Assignment 10
+
+Write a PHP program to accept form input and display it using the POST method.
+<!DOCTYPE html>
+<html>
+<head>
+<title>PHP POST Form Handling</title>
+<style>
+body { font-family: Arial, sans-serif; background-color: #e9ecef; padding: 20px; }
+.container {
+max-width: 400px;
+margin: 0 auto;
+background: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+input[type="text"], input[type="number"] {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box; /* Fix padding issue */
+}
+input[type="submit"] {
+width: 100%;
+background-color: #28a745;
+color: white;
+padding: 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+input[type="submit"]:hover { background-color: #218838; }
+.result-box {
+margin-top: 20px;
+padding: 15px;
+border-radius: 4px;
+background-color: #d1e7dd;
+border: 1px solid #badbcc;
+color: #0f5132;
+}
+.error { color: red; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2 style="text-align: center; color: #333;">Voting Eligibility Check</h2>
+<!--
+action: PHP_SELF means submit to this same file.
+method: POST ensures data is secure.
+-->
+<form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<label>Full Name:</label>
+<input type="text" name="fname" placeholder="Enter your name" required>
+<label>Age:</label>
+<input type="number" name="age" placeholder="Enter your age" required>
+<input type="submit" value="Check Eligibility">
+</form>
+<!-- PHP Processing Logic -->
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// 1. Retrieve and Sanitize Data
+// htmlspecialchars prevents Cross-Site Scripting (XSS)
+$name = htmlspecialchars($_POST['fname']);
+$age = $_POST['age'];
+// 2. Validation
+if (empty($name) || empty($age)) {
+echo "<p class='error'>Fields cannot be empty!</p>";
+} else {
+// 3. Business Logic
+$status = "";
+if ($age >= 18) {
+$status = "You are <b>Eligible</b> to vote.";
+} else {
+$years_left = 18 - $age;
+$status = "You are <b>Not Eligible</b>. Wait for $years_left more years.";
+}
+// 4. Display Output
+echo "<div class='result-box'>";
+echo "<h4>Result for $name:</h4>";
+echo "Your Age: $age <br>";
+echo "$status";
+echo "</div>";
+}
+}
+?>
+</div>
+</body>
+</html>
+
+Assignment 11
+
+Implement a PHP program for string manipulation (e.g., reverse, length, substring).
+<!DOCTYPE html>
+<html>
+<head>
+<title>PHP String Operations</title>
+<style>
+body { font-family: 'Verdana', sans-serif; background-color: #222; color: #fff; padding:
+30px; }
+.container { max-width: 600px; margin: 0 auto; background-color: #333; padding:
+20px; border-radius: 10px; border-left: 5px solid #ff9800; }
+h2 { color: #ff9800; border-bottom: 1px solid #555; padding-bottom: 10px; }
+.original { background-color: #444; padding: 10px; font-size: 1.2em; border-radius:
+5px; margin-bottom: 20px; }
+ul { list-style-type: none; padding: 0; }
+li { background-color: #444; margin: 5px 0; padding: 10px; border-radius: 5px; display:
+flex; justify-content: space-between; }
+.label { color: #aaa; font-weight: bold; }
+.value { color: #81c784; font-family: 'Courier New', monospace; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>PHP String Manipulation</h2>
+<?php
+// 1. Input String
+$str = "Web Development Lab";
+echo "<div class='original'>Original String: <span
+style='color:#fff'>\"$str\"</span></div>";
+echo "<ul>";
+// 2. Length Calculation
+$len = strlen($str);
+echo "<li><span class='label'>Length (strlen):</span> <span class='value'>$len
+characters</span></li>";
+// 3. Word Count
+$words = str_word_count($str);
+echo "<li><span class='label'>Word Count:</span> <span class='value'>$words
+words</span></li>";
+// 4. Reverse
+$rev = strrev($str);
+echo "<li><span class='label'>Reverse (strrev):</span> <span
+class='value'>$rev</span></li>";
+
+// 5. Uppercase
+$upper = strtoupper($str);
+echo "<li><span class='label'>Uppercase:</span> <span
+class='value'>$upper</span></li>";
+// 6. Search Position (Zero-indexed)
+// Searching for 'Dev'
+$search_term = "Dev";
+$pos = strpos($str, $search_term);
+echo "<li><span class='label'>Position of '$search_term':</span> <span
+class='value'>Index $pos</span></li>";
+// 7. Replace
+$replaced = str_replace("Lab", "Course", $str);
+echo "<li><span class='label'>Replace 'Lab':</span> <span
+class='value'>$replaced</span></li>";
+// 8. Substring
+// Extract 'Web' (Start at 0, length 3)
+$sub = substr($str, 0, 3);
+echo "<li><span class='label'>Substring (0, 3):</span> <span
+class='value'>$sub</span></li>";
+echo "</ul>";
+?>
+</div>
+</body>
+</html>
+
+Assignment 12
+Create a PHP script to store and display values in an array.
+<!DOCTYPE html>
+<html>
+<head>
+<title>PHP Arrays</title>
+<style>
+body { font-family: Arial, sans-serif; background-color: #f8f9fa; padding: 40px; }
+.card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+h3 { color: #007bff; border-bottom: 2px solid #007bff; display: inline-block;
+padding-bottom: 5px; }
+/* List Styling */
+ul { list-style-type: square; color: #555; }
+li { margin: 5px 0; font-size: 18px; }
+/* Table Styling */
+table { border-collapse: collapse; width: 60%; margin-top: 10px; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+th { background-color: #343a40; color: white; }
+tr:nth-child(even) { background-color: #f2f2f2; }
+tr:hover { background-color: #ddd; }
+</style>
+</head>
+<body>
+<h1 style="text-align:center">PHP Arrays Demonstration</h1>
+<!-- 1. INDEXED ARRAY DEMO -->
+<div class="card">
+<h3>1. Indexed Array (List of Technologies)</h3>
+<p><i>Scenario: Storing a list of skills for a resume.</i></p>
+<?php
+// Declaration
+$tech_stack = array("HTML5", "CSS3", "JavaScript", "PHP 8", "MySQL");
+// Adding a new item dynamically
+$tech_stack[] = "Bootstrap 5";
+echo "<ul>";
+// Loop through indexed array
+foreach ($tech_stack as $tech) {
+echo "<li>$tech</li>";
+}
+echo "</ul>";
+
+echo "<b>Total Technologies: " . count($tech_stack) . "</b>";
+?>
+</div>
+<!-- 2. ASSOCIATIVE ARRAY DEMO -->
+<div class="card">
+<h3>2. Associative Array (Student Marks)</h3>
+<p><i>Scenario: Storing Key-Value pairs where Key=Subject and
+Value=Marks.</i></p>
+<?php
+// Declaration Key => Value
+$marks = array(
+"Web Development" => 90,
+"Database Mgmt" => 85,
+"Data Structures" => 78,
+"Microprocessors" => 82
+);
+?>
+<table>
+<tr>
+<th>Subject Name</th>
+<th>Marks Obtained</th>
+</tr>
+<?php
+// Loop through associative array
+// $subject becomes the Key, $score becomes the Value
+foreach($marks as $subject => $score) {
+echo "<tr>";
+echo "<td>" . $subject . "</td>";
+echo "<td>" . $score . "</td>";
+echo "</tr>";
+}
+?>
+</table>
+</div>
+</body>
+</html>
